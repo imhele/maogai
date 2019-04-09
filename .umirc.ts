@@ -1,5 +1,6 @@
 // ref: https://umijs.org/config/
 import { IConfig } from 'umi-types';
+import { UmiPluginOssOptions } from 'umi-plugin-oss';
 
 const config: IConfig = {
   hash: true,
@@ -30,6 +31,20 @@ const config: IConfig = {
     ],
     // ref: https://github.com/imhele/umi-plugin-nprogress
     'umi-plugin-nprogress',
+    [
+      'umi-plugin-oss',
+      {
+        accessKeyId: '',
+        accessKeySecret: '',
+        acl: 'public-read',
+        bucket: {
+          endpoint: 'oss-cn-beijing.aliyuncs.com',
+          name: 'imhele',
+        },
+        prefix: 'maogai',
+        secure: true,
+      } as UmiPluginOssOptions,
+    ],
   ],
 };
 

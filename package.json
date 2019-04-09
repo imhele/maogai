@@ -44,6 +44,7 @@
     "tslint-react": "^3.6.0",
     "umi": "~2.6.11",
     "umi-plugin-nprogress": "^1.1.6",
+    "umi-plugin-oss": "^1.2.0",
     "umi-plugin-react": "~1.7.2",
     "umi-types": "~0.3.2"
   },
