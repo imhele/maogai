@@ -2,7 +2,7 @@ import RunMaoGaiScript, { debugOutput, DebugType } from '@/utils/maogai';
 import { Col, Icon, Input, Layout, message, Row, Table, Typography } from 'antd';
 import { BaseType as TextType } from 'antd/es/typography/Base';
 import { Moment } from 'moment';
-import React, { ReactNode, FC, useState, useRef, useEffect } from 'react';
+import React, { ReactNode, FC, useState } from 'react';
 import useMedia from 'react-media-hook2';
 import styles from './index.less';
 
