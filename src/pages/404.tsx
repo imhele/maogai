@@ -1,1 +1,1 @@
-export { default } from './Exception/404';
+export { default } from './exception/404';
