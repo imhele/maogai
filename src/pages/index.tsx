@@ -107,7 +107,11 @@ const Index: FC = () => {
   return (
     <Layout className={styles.container}>
       <Content>
-        <Title>MaoGaiScript - Online Editor{plainStr}</Title>
+        <Title className={styles.headerTitle}>
+          MaoGaiScript - Online Editor {plainStr}
+          <img src="//travis-ci.com/imhele/maogai.svg?token=ZYib2HA5UQBMhbDz2esD&branch=master" />
+          <img src="//api.netlify.com/api/v1/badges/7f078f48-b8d6-405c-bc01-1823768f167a/deploy-status" />
+        </Title>
         <Table
           className={styles.table}
           dataSource={TableData}
