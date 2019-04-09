@@ -6,6 +6,7 @@
     "test": "umi test",
     "start": "umi dev",
     "build": "umi build",
+    "build:local": "cross-env UMI_ENV=local umi build",
     "precommit": "lint-staged",
     "lint": "tslint --project . -c tslint.yml",
     "clean": "rm -r src/pages/.umi && rm -r node_modules/.cache",
