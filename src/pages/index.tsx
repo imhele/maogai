@@ -63,10 +63,10 @@ const DebugTextType: Map<DebugType, TextType> = new Map([
   [DebugType.INFO, void 0],
 ]);
 
-const renderDebugOutput = (item: [Moment, DebugType, string]): ReactNode => {
+const renderDebugOutput = (item: [Moment, DebugType, string], index: number): ReactNode => {
   const timestamp = item[0].format('YYYY/MM/DD HH:mm:ss:SSS');
   return (
-    <div key={timestamp}>
+    <div key={index}>
       <Text strong type={DebugTextType.get(item[1])}>{`[${item[1]}] `}</Text>
       <Text type="secondary">{timestamp}</Text>
       <Paragraph copyable className={styles.description} ellipsis={{ rows: 2, expandable: true }}>
