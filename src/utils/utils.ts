@@ -1,8 +1,6 @@
 import pathToRegexp from 'path-to-regexp';
 import { CheckAuth, CurrentScope } from '@/components/Authorized';
 
-export * from './format';
-
 export function pathnameToArr(pathname = ''): string[] {
   const pathnameArr: string[] = pathname.split('/').filter(i => i);
   return pathnameArr.map((_, i) => `/${pathnameArr.slice(0, i + 1).join('/')}`);

@@ -1,7 +1,6 @@
 import hash from 'hash.js';
 import router from 'umi/router';
-import { getSign } from './auth';
-import { notification, message } from 'antd';
+import { notification } from 'antd';
 import fetch from 'isomorphic-fetch'; // @issue: https://github.com/dvajs/dva/issues/2000
 
 export interface RequestBody {}
@@ -76,10 +75,6 @@ export default async function request<T>(
     expirys: 30,
     credentials: 'omit' as RequestCredentials,
     ...options,
-    headers: {
-      ...getSign(),
-      ...options.headers,
-    },
   };
   if (
     newOptions.method === 'POST' ||
